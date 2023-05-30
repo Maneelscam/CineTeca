@@ -1,0 +1,165 @@
+/*Login e cadastro nesse rolê aq*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: orangered;
+    --form-bg-color: #fff;
+    --green-color: #09471c;
+    --error-msg-color: #ff0000;
+    --input-letra-color: #fff;
+    --span-color: #8f8f8f;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: var(--bg-color)
+}
+
+form {
+    margin: 70px;
+    background: var(--form-bg-color);
+    padding: 50px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--green-color);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: var(--input-letra-color);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color:var(--span-color);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: var(--green-color);
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #5d6768;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+    height: 44px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: var(--span-color);
+    text-decoration: beige;
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+    color: var(--green-color);
+}
+
+input[type="submit"] {
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    background: var(--green-color);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 30px;
+    color: var(--form-bg-color);
+    
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}
+
+.erro {
+    color: var(--error-msg-color);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.form-iconBack a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: var(--green-color);
+    border-radius: .5rem;
+    transition: .5s ease;
+}
+
+
+.form-iconBack a i {
+    font-size: 1.4rem;
+    color: var(--form-bg-color);
+
+}

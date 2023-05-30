@@ -1,0 +1,90 @@
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu i {
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+@media (max-width: 800px) {
+
+    .stand-card-li {
+        margin-bottom: 50px;
+    }
+
+    .button-ingresso {
+        margin-top: 30px;
+    }
+
+    /*MOBILE MENU*/
+
+    .cabecalho-nav-ul {
+        display: none
+    }
+
+    .cabecalho-nav .mobile-menu {
+        display: flex;
+    }
+
+    .cabecalho-mobile {
+        z-index: 999;
+        display: block !important;
+        position: absolute;
+        background: rgba(237, 245, 225, 0.8);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        right: 2.2rem;
+        top: 100px;
+        width: 85%;
+        height: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .cabecalho-mobile.open {
+        height: 115px;
+    }
+
+    .cabecalho-nav-mobile {
+
+        padding: 0.7rem;
+    }
+
+    .cabecalho-nav-mobile a {
+        text-transform: uppercase;
+        color: orangered;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+    /* FIM DO MOBILE MENU*/
+
+
+
+
+    #footer-conteiner p {
+        padding: 20px 0;
+    }
+
+    .stand-card {
+        grid-template-columns: 100%;
+    }
+
+    #introducao-text h1 {
+        font-size: 3rem;
+    }
+
+    #sobre-site-container-img {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #introducao-text h1 {
+        font-size: 2.5rem;
+    }
+}

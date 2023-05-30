@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTeca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/carrosel.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <!--Icons...-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="cabecalho">
+            <img class="cabecalho-img" src="img/logo.svg" alt="logo">
+
+            <!--================CABECALHO GERAL - FILMES ============================================================================================================-->
+            <nav class="cabecalho-nav">
+                <ul class="cabecalho-nav-ul ">
+                    <li class="cabecalho-nav-ul-li"><a href="#nossos-filmes">Filmes</a></li>
+                    <li class="cabecalho-nav-ul-li"><a href="#">Horarios</a></li>
+                    <li class="cabecalho-nav-ul-li"><a href="#">Avaliação</a></li>
+                </ul>
+                <!--================FIM - - >CABECALHO GERAL - FILMES ============================================================================================================-->
+
+                <!--================ CABECALHO MOBILE - RESPONSIVE - FILMES ============================================================================================================-->
+                <div class="mobile-menu">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars" style="color: #09471c;"></i>
+                </div>
+                <ul class="cabecalho-mobile ">
+                    <li class="cabecalho-nav-mobile"><a href="#">Filmes</a></li>
+                    <li class="cabecalho-nav-mobile"><a href="#">Horarios</a></li>
+                    <li class="cabecalho-nav-mobile"><a href="#">Avaliação</a></li>
+                </ul>
+            </nav>
+
+            <!--================FIM - - >CABECALHO MOBILE - RESPONSIVE - FILMES ============================================================================================================-->
+
+            <!--================Menu USUARIO ============================================================================================================-->
+            <nav class="user-nav">
+                <div class="icon-usuario" id="icon-user">
+                    <a href="#"><i class='bx bxs-user'></i>Olá visitante! <i class='bx bx-caret-down'></i></a>
+                </div>
+                <ul class="user-nav-ul">
+                    <li class="user-nav-ul-li"><a href="login.php">Fazer Login</a></li>
+                    <li class="user-nav-ul-li"><a href="#"></a></li>
+                </ul>
+            </nav>
+            <!--================FIM - - > Menu USUARIO ============================================================================================================-->
+
+        </div>
+
+    </header>
+
+    <section class="carrosel-section">
+        <div class="carrossel">
+            <div class="carrossel-item active">
+                <img src="img/imagem1.jpg" alt="Imagem 1">
+            </div>
+            <div class="carrossel-item">
+                <img src="img/imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="carrossel-item">
+                <img src="img/imagem3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+        <div class="carrossel-indicadores">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section id="nossos-filmes">
+
+        <div>
+            <h2>Filmes em Cartaz</h2>
+        </div>
+        <div id="nossos-filmes-container">
+            <ul class="stand-card">
+                <li class="stand-card-li">
+                    <span class="sala-filme">Sala 1 - DUBLADO </span>
+                    <div class="hora-icon">
+                        <img src="icon/14.ico" alt="">
+                        <span class="hora-filme">18:00 - 20:40</span>
+                    </div>
+                    <div class="stand-card-li-div">
+                        <img class="cards" src="img/velozes.jpg" alt="">
+                    </div>
+                    <span class="nome-filme">Velozes e Furiosos X</span>
+                </li>
+                <li class="stand-card-li">
+                    <span class="sala-filme">Sala 1 - DUBLADO </span>
+                    <div class="hora-icon">
+                        <img src="icon/12.ico" alt="">
+                        <span class="hora-filme">18:00 - 20:40</span>
+                    </div>
+                    <div class="stand-card-li-div">
+                        <img class="cards" src="img/galaxia.jpg" alt="">
+                    </div>
+                    <span class="nome-filme">Guardioes da Galaxia</span>
+                </li>
+                <li class="stand-card-li">
+                    <span class="sala-filme">Sala 2 - DUBLADO </span>
+                    <span class="hora-filme">18:00 - 20:40</span>
+                    <div class="stand-card-li-div">
+                        <img class="cards" src="img/flash.webp" alt="">
+                    </div>
+                    <span class="nome-filme">The Flash</span>
+                </li>
+            </ul>
+            <div class="button">
+                <a href="login.php" class="button-ingresso">Comprar Ingresso</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="info-cards" id="info-cards">
+        <div>
+            <h2 class="heading">Informações </h2>
+        </div>
+        <div id="info-cards-container">
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Horarios</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                </div>
+                <button class="card-button"></button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Preços</p>
+                    <p class="text-body">Here are the details of the card</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                    <p class="text-body">18:00 - 20:40</p>
+                </div>
+                <button class="card-button"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="" method="POST">
+            <div class="input-box">
+                <input type="text" name="" id="" placeholder="Full Name" required>
+                <input type="email" name="" id="" placeholder="Email Adress" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="" id="" placeholder="Mobile Number" required>
+                <input type="text" name="" id="" placeholder="Email Subject" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Menssage" required></textarea>
+            <div class="button">
+                <a href=""><input type="submit" value="Enviar" class="button-contact"></a>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+
+<script src="js/script.js"></script>
+
+</html>
